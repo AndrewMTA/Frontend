@@ -87,7 +87,7 @@ const handleSubmit = (e) => {
     <h2>Start Investing</h2>
      </div>
       <div className="inputWrap">
-      <label>Name</label>
+      <label>Full Name</label>
       <input
         type="text"
         className="form-control"
@@ -149,7 +149,7 @@ const handleSubmit = (e) => {
       />
       </div>
       <button type='submit' className='rounded-md border-[1px] mt-10 p-3 border-[#0091FA] mb-10 text-white text-[25px]' >Submit</button>
-      <h2><a href='/crowdfund'> <span className='Click'>Signup To Crowdfund</span> </a></h2> </form> 
+      <h2><a href='/crowdfund'> <span className='Click'>Sign Up To Crowdfund</span> </a></h2> </form> 
 
     </div>
   );

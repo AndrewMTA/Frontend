@@ -101,7 +101,7 @@ const handleSubmit = (e) => {
     <h2>Start Your Campaign</h2>
     </div>
       <div className="inputWrap">
-      <label>Name</label>
+      <label>Full Name</label>
       <input
         type="text"
         className="form-control"
@@ -142,7 +142,7 @@ const handleSubmit = (e) => {
         onChange={(e) => setRaise(e.target.value)}
         value={raise}
       />{" "}  </div>    <div className="inputWrap">
-      <label>What stage are you at?</label>
+      <label>What stage in your product are you? (Idea, prototype, MVP with customers, fully launched product with customers etc. ?)</label>
       <input
         type="text"
         className="form-control"
