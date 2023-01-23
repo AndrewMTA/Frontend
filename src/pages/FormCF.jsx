@@ -99,7 +99,7 @@ const handleSubmit = (e) => {
     <form className="form" onSubmit={handleSubmit}>
       <div className='flexWrap'>
     <h2>Start Your Campaign</h2>
-      <h2><a href='/Invest'> <span className='Click'>Click To Invest</span> </a></h2></div>
+    </div>
       <div className="inputWrap">
       <label>Name</label>
       <input
@@ -184,7 +184,8 @@ const handleSubmit = (e) => {
         value={usa}
       />
       </div>
-      <button type='submit' className='rounded-md border-[1px] mt-10 p-3 border-[#0091FA] text-white text-[25px]'>Submit</button>
+      <button type='submit' className='rounded-md border-[1px] mb-10 mt-5 p-3 border-[#0091FA] text-white text-[25px]'>Submit</button>
+      <h2><a href='/Invest'> <span className='Click'>Sign Up To Invest</span> </a></h2>
     </form>
     </div>
   );

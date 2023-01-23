@@ -85,7 +85,7 @@ const handleSubmit = (e) => {
     <form className="form" onSubmit={handleSubmit}>
       <div className='flexWrap'>
     <h2>Start Investing</h2>
-      <h2><a href='/crowdfund'> <span className='Click'>Click To Raise Money</span> </a></h2></div>
+     </div>
       <div className="inputWrap">
       <label>Name</label>
       <input
@@ -148,8 +148,8 @@ const handleSubmit = (e) => {
         value={usa}
       />
       </div>
-      <button type='submit' className='rounded-md border-[1px] mt-10 p-3 border-[#0091FA] text-white text-[25px]' >Submit</button>
-    </form> 
+      <button type='submit' className='rounded-md border-[1px] mt-10 p-3 border-[#0091FA] mb-10 text-white text-[25px]' >Submit</button>
+      <h2><a href='/crowdfund'> <span className='Click'>Signup To Crowdfund</span> </a></h2> </form> 
 
     </div>
   );
