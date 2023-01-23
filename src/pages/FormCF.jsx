@@ -99,7 +99,7 @@ const handleSubmit = (e) => {
     <form className="form" onSubmit={handleSubmit}>
       <div className='flexWrap'>
     <h2>Start Your Campaign</h2>
-      <h2><a href='/Invest'> <span className='Click'>Click Here To Invest</span> </a></h2></div>
+      <h2><a href='/Invest'> <span className='Click'>Click To Invest</span> </a></h2></div>
       <div className="inputWrap">
       <label>Name</label>
       <input
@@ -134,7 +134,7 @@ const handleSubmit = (e) => {
       />{" "}    </div>  <div className="inputWrap">
       <label>How much do you want to raise?</label>
 
-     <span className='dollar'> <BsCurrencyDollar color = "#000000" size = {17}/> </span><input
+     <span className='dollar'> <BsCurrencyDollar color = "#000000" size = {15}/> </span><input
       type="number"
         className="form-price"
         required
@@ -165,7 +165,7 @@ const handleSubmit = (e) => {
       <div className="inputWrap">
         
       <label>How much have you already raised?</label>
-      <span className='dollar'> <BsCurrencyDollar color = "#000000" size = {17}/> </span>
+      <span className='dollar'> <BsCurrencyDollar color = "#000000" size = {15}/> </span>
       <input
         type="text"
         className="form-price"

@@ -21,13 +21,13 @@ const FeatureCard = ({ icon, title, content, index }) => (
 const Business = () =>  (
   <section id="features" className={layout.section}>
     <div className={layout.sectionInfo}>
-     <div className=" border-[1px] border-[#D10CB1] w-[584px] rounded-md h-[254px] mt-5 mr-10 mb-10 p-5">
-      <h2 className="text-white  text-[42px]">Interested in raising capital?</h2>
-      <a href="/Crowdfund"><button className="rounded-md border-[1px] mt-10 p-3 border-[#D10CB1] text-white text-[25px]">Get Started</button>
+     <div className=" border-[1px] border-[#D10CB1] w-[584px] rounded-md h-[240px] mt-5 mr-10 mb-10 p-5">
+      <h2 className="text-white  text-[36px]">Interested in raising capital?</h2>
+      <a href="/Crowdfund"><button className="rounded-md border-[1px] mt-12 p-3 border-[#D10CB1] text-white text-[23px]">Get Started</button>
       </a>   </div>
-     <div  className="border-[1px] border-[#0091FA] rounded-md w-[584px] mr-10 h-[254px] p-5">
-      <h2 className="text-white text-[42px] ">Interested in investing?</h2>
-      <a href="/Invest"><button className="rounded-md border-[1px] mt-10 p-3 border-[#0091FA] text-white text-[25px]">Get Started</button>
+     <div  className="border-[1px] border-[#0091FA] rounded-md w-[584px] mr-10 h-[240px] p-5">
+      <h2 className="text-white text-[36px] ">Interested in investing?</h2>
+      <a href="/Invest"><button className="rounded-md border-[1px] mt-12 p-3 border-[#0091FA] text-white text-[23px]">Get Started</button>
       </a>    </div>
 
     

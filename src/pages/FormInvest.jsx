@@ -85,7 +85,7 @@ const handleSubmit = (e) => {
     <form className="form" onSubmit={handleSubmit}>
       <div className='flexWrap'>
     <h2>Start Investing</h2>
-      <h2><a href='/crowdfund'> <span className='Click'>Click Here To Raise Money</span> </a></h2></div>
+      <h2><a href='/crowdfund'> <span className='Click'>Click To Raise Money</span> </a></h2></div>
       <div className="inputWrap">
       <label>Name</label>
       <input
@@ -129,7 +129,7 @@ const handleSubmit = (e) => {
         onChange={(e) => setAccredited(e.target.value)}
         value={accredited}
       />{" "}  </div>    <div className="inputWrap">
-      <label>What is your annual income?</label>     <span className='dollar'> <BsCurrencyDollar color = "#000000" size = {17}/> </span>
+      <label>What is your annual income?</label>     <span className='dollar'> <BsCurrencyDollar color = "#000000" size = {15}/> </span>
       <input
         type="number"
         className="form-price"
