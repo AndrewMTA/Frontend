@@ -9,15 +9,10 @@ const FormCF = () => {
 const [name, setName] = useState("");
 const [phone, setPhone] = useState("");
 const [email, setEmail] = useState("");
-const [company, setCompany] = useState("");
-const [pitch, setPitch] = useState("");
-const [raise, setRaise] = useState("");
-const [stage, setStage] = useState("");
-const [timeline, setTimeline] = useState("");
-const [prevRaised, setPrevRaised] = useState("");
-const [usa, setUsa] = useState("");
+const [accredited, setAccredited] = useState("");
+const [income, setIncome] = useState("");
+const [usa, setUsa] = useState("")
 
-const [show, setShow] = useState(true);
 const navigate = useNavigate()
 function formatPhoneNumber(value) {
   // if input value is falsy eg if the user deletes the input, then just return
@@ -65,16 +60,12 @@ const handleSubmit = (e) => {
     name,
     email,
     phone,
-    company,
-    pitch,
-    raise,
-    stage,
-    timeline,
-    prevRaised,
+    accredited, 
+    income,
     usa,
   };
   axios.post(
-      "/crowdfund",
+      "/investors",
       data
     )
     .then((response) => {
@@ -82,12 +73,8 @@ const handleSubmit = (e) => {
       setName("");
       setPhone("");
       setEmail("");
-      setCompany("");
-      setPitch("");
-      setRaise("");
-      setStage("");
-      setTimeline("");
-      setPrevRaised("");
+      setAccredited("");
+      setIncome("");
       setUsa("");
     });
 };
@@ -98,7 +85,7 @@ const handleSubmit = (e) => {
     <form className="form" onSubmit={handleSubmit}>
       <div className='flexWrap'>
     <h2>Start Investing</h2>
-      <h2>Looking to raise money?<a href='/crowdfund'> <span className='Click'>Click Here</span> </a></h2></div>
+      <h2><a href='/crowdfund'> <span className='Click'>Click Here To Raise Money</span> </a></h2></div>
       <div className="inputWrap">
       <label>Name</label>
       <input
@@ -135,21 +122,21 @@ const handleSubmit = (e) => {
       <label>Are you an accredited investor?  </label> </div>
 
 <input
-      type="number"
+      type="text"
       className="form-control"
         required
         defaultValue="678"
-        onChange={(e) => setRaise(e.target.value)}
-        value={raise}
+        onChange={(e) => setAccredited(e.target.value)}
+        value={accredited}
       />{" "}  </div>    <div className="inputWrap">
       <label>What is your annual income?</label>     <span className='dollar'> <BsCurrencyDollar color = "#000000" size = {17}/> </span>
       <input
-        type="text"
+        type="number"
         className="form-price"
         required
    
-        onChange={(e) => setStage(e.target.value)}
-        value={stage}
+        onChange={(e) => setIncome(e.target.value)}
+        value={income}
       />{" "}  </div>   <div className="inputWrap">
          <label>Do you live in the U.S?</label>
       <input

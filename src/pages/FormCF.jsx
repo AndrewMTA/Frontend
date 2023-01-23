@@ -2,6 +2,7 @@
 import {BsCurrencyDollar, BsCreditCard2Front} from 'react-icons/bs';
 import React from "react";
 import { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 import axios from "axios";
 const FormCF = () => {
 const [name, setName] = useState("");
@@ -16,6 +17,7 @@ const [prevRaised, setPrevRaised] = useState("");
 const [usa, setUsa] = useState("");
 const [data, setData]=useState([]);
 
+const navigate = useNavigate()
 
 function formatPhoneNumber(value) {
   // if input value is falsy eg if the user deletes the input, then just return
@@ -74,6 +76,8 @@ const handleSubmit = (e) => {
       "/crowdfunding",
       data
     )
+    navigate("/success")
+
     .then((response) => {
       console.log(response);
       setName("");
@@ -94,8 +98,8 @@ const handleSubmit = (e) => {
   
     <form className="form" onSubmit={handleSubmit}>
       <div className='flexWrap'>
-    <h2>Start your campaign</h2>
-      <h2>Looking to invest?<a href='/Invest'> <span className='Click'>Click Here</span> </a></h2></div>
+    <h2>Start Your Campaign</h2>
+      <h2><a href='/Invest'> <span className='Click'>Click Here To Invest</span> </a></h2></div>
       <div className="inputWrap">
       <label>Name</label>
       <input

@@ -5,7 +5,7 @@ import App from './App';
 import './index.css';
 import axios from 'axios';
 
-axios.defaults.baseURL = 'https://mysterious-fortress-77407.herokuapp.com/';
+axios.defaults.baseURL = 'http://localhost:5000';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
