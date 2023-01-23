@@ -1,6 +1,6 @@
 import styles from "./style";
 import { Billing, Business, CardDeal, Clients, CTA, Footer, Navbar, Stats, Testimonials, Hero } from "./components";
-import {HashRouter, Route, Routes} from "react-router-dom"
+import {BrowserRouter, Route, Routes} from "react-router-dom"
 import Home from "./pages/Home"
 import FormCF from "./pages/FormCF";
 import FormInvest from "./pages/FormInvest"
@@ -13,7 +13,7 @@ const App = () => (
     <Navbar />
   </div>
 </div>
-<HashRouter>
+<BrowserRouter>
   <Routes>
     <Route path="/success" element={<Success/>}/>
         <Route path="/crowdfund" element={<FormCF/>}/>
@@ -21,7 +21,7 @@ const App = () => (
         <Route path="/" element={<Home/>}/>
         </Routes>
 
-    </HashRouter>
+    </BrowserRouter>
     </div>
 </>
 );
