@@ -54,7 +54,7 @@ const handleSubmit = (e) => {
   e.preventDefault();
   // console.log(name, age, designation, salary);
 
-  navigate("/success")
+
   // our object to pass
   const data = {
     name,
@@ -65,10 +65,8 @@ const handleSubmit = (e) => {
     usa,
   };
   axios.post(
-      "/investors",
-      data
-    )
-    .then((response) => {
+      "/investors",data
+    ).then((response) => {
       console.log(response);
       setName("");
       setPhone("");
@@ -77,6 +75,8 @@ const handleSubmit = (e) => {
       setIncome("");
       setUsa("");
     });
+    
+    navigate("/success")
 };
 
   return (

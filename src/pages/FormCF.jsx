@@ -73,12 +73,8 @@ const handleSubmit = (e) => {
     usa,
   };
   axios.post(
-      "/crowdfunding",
-      data
-    )
-    navigate("/success")
-
-    .then((response) => {
+      "/crowdfunding",data
+  ).then((response) => {
       console.log(response);
       setName("");
       setPhone("");
@@ -91,6 +87,8 @@ const handleSubmit = (e) => {
       setPrevRaised("");
       setUsa("");
     });
+    navigate("/success")
+
 };
 
   return (
